@@ -1,0 +1,511 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title "CAN Node"
+Date "2018-05-01"
+Rev "1.1"
+Comp "Josef Raschen"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 550  1000 0    60   ~ 0
+5..24 V
+$Comp
+L Device:R R?
+U 1 1 5637DBF2
+P 1200 2450
+F 0 "R?" V 1280 2450 50  0000 C CNN
+F 1 "100k" V 1200 2450 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 1130 2450 30  0001 C CNN
+F 3 "" H 1200 2450 30  0000 C CNN
+	1    1200 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 5637E04D
+P 1600 1750
+F 0 "D?" H 1600 1850 50  0000 C CNN
+F 1 "10V" H 1600 1650 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMA_Handsoldering" H 1600 1750 60  0001 C CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/MM3Z2V4T1-D.PDF" H 1600 1750 60  0001 C CNN
+F 4 "ON Semiconductor 1SMA5925BT3G" H 1600 1750 60  0001 C CNN "Device"
+F 5 "RE:BZX 384-C12 NXP" H 1600 1750 50  0001 C CNN "Replacement Part"
+	1    1600 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 57AF3BB5
+P 850 2200
+F 0 "D?" V 804 2288 50  0000 L CNN
+F 1 "40.2V" V 895 2288 50  0000 L CNN
+F 2 "Diodes_SMD:D_SMA_Handsoldering" H 850 2200 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88367/p4sma.pdf" H 850 2200 50  0001 C CNN
+F 4 "P4SMA47CA" V 1100 2200 60  0000 C CNN "Part"
+F 5 "RE P6SMB 40CA SMD" V 850 2200 50  0001 C CNN "Replacement Part"
+	1    850  2200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 57C23EF3
+P 6950 2200
+F 0 "#PWR?" H 6950 1950 50  0001 C CNN
+F 1 "GND" H 6950 2050 50  0000 C CNN
+F 2 "" H 6950 2200 60  0000 C CNN
+F 3 "" H 6950 2200 60  0000 C CNN
+	1    6950 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 57C23EF9
+P 7550 2200
+F 0 "#PWR?" H 7550 1950 50  0001 C CNN
+F 1 "GNDA" H 7550 2050 50  0000 C CNN
+F 2 "" H 7550 2200 60  0000 C CNN
+F 3 "" H 7550 2200 60  0000 C CNN
+	1    7550 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 57C23F59
+P 6950 1900
+F 0 "#PWR?" H 6950 1750 50  0001 C CNN
+F 1 "+3.3V" H 6965 2073 50  0000 C CNN
+F 2 "" H 6950 1900 50  0000 C CNN
+F 3 "" H 6950 1900 50  0000 C CNN
+	1    6950 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_SGD Q?
+U 1 1 57C95065
+P 1200 1600
+F 0 "Q?" V 1500 1600 50  0000 C CNN
+F 1 "RSS060P05FRATB" V 1400 1600 50  0000 C CNN
+F 2 "can-node:DMP6023LSS" V 1150 1850 50  0001 C CIN
+F 3 "https://www.rohm.de/datasheet/RSS060P05FRA/rss060p05fra" H 1200 1600 50  0001 L CNN
+F 4 "RSS060P05FRATB" V 1600 1700 50  0001 C CNN "DPN"
+F 5 "Rohm" V 1200 1600 50  0001 C CNN "Manufacturer"
+	1    1200 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 57D41A9C
+P 4000 1500
+F 0 "C?" V 3748 1500 50  0000 C CNN
+F 1 "100n >10V" V 3839 1500 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4038 1350 50  0001 C CNN
+F 3 "" H 4000 1500 50  0000 C CNN
+F 4 ">10V" V 4000 1500 60  0001 C CNN "Rating"
+F 5 "RE:X7R-G0603 100N" V 4000 1500 50  0001 C CNN "DPN"
+	1    4000 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 57D41C33
+P 4200 1950
+F 0 "D?" V 4154 2029 50  0000 L CNN
+F 1 "50V Vr 1A" V 4245 2029 50  0000 L CNN
+F 2 "can-node:D_SOD-123_HandSoldering" H 4200 1950 50  0001 C CNN
+F 3 "" H 4200 1950 50  0000 C CNN
+F 4 "Reichelt" V 4200 1950 50  0001 C CNN "Distributor"
+F 5 "MBR 0540T1G ONS" V 4200 1950 50  0001 C CNN "DPN"
+	1    4200 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L_Core_Ferrite L?
+U 1 1 57D41D41
+P 4500 1700
+F 0 "L?" V 4716 1700 50  0000 C CNN
+F 1 "27µH 220mΩ" V 4625 1700 50  0000 C CNN
+F 2 "can-node:SDE0604A_HandSoldering" H 4500 1700 50  0001 C CNN
+F 3 "" H 4500 1700 50  0000 C CNN
+F 4 "RE:L-PIS2812 27µ" V 4500 1700 50  0001 C CNN "Replacement Part"
+F 5 "SDE0604A-270M" V 4916 1900 50  0001 C CNN "DPN"
+F 6 "Bourns" V 5116 2100 50  0001 C CNN "Distributor"
+	1    4500 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 57D41E1E
+P 5050 2000
+F 0 "C?" H 5165 2046 50  0000 L CNN
+F 1 "22µF" H 5165 1955 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 5088 1850 50  0001 C CNN
+F 3 "" H 5050 2000 50  0000 C CNN
+F 4 "Reichelt" H 5050 2000 50  0001 C CNN "Distributor"
+F 5 "X7R-G1206 22/10" H 5050 2000 50  0001 C CNN "DPN"
+	1    5050 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 57D4210A
+P 2500 1700
+F 0 "R?" H 2570 1746 50  0000 L CNN
+F 1 "100k" H 2570 1655 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2430 1700 50  0001 C CNN
+F 3 "" H 2500 1700 50  0000 C CNN
+F 4 "RE:SMD-0603 100K" H 2500 1700 50  0001 C CNN "Part"
+	1    2500 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 57D42289
+P 2050 1900
+F 0 "C?" H 2165 1946 50  0000 L CNN
+F 1 "2.2µF" H 2165 1855 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210_HandSoldering" H 2088 1750 50  0001 C CNN
+F 3 "" H 2050 1900 50  0000 C CNN
+F 4 "RE:KEM X7R1210 2,2U" H 2050 1900 50  0001 C CNN "Part"
+	1    2050 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 57D426D3
+P 4200 2200
+F 0 "#PWR?" H 4200 1950 50  0001 C CNN
+F 1 "GND" H 4205 2027 50  0000 C CNN
+F 2 "" H 4200 2200 50  0000 C CNN
+F 3 "" H 4200 2200 50  0000 C CNN
+	1    4200 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 57D42C55
+P 5050 2350
+F 0 "#PWR?" H 5050 2100 50  0001 C CNN
+F 1 "GND" H 5055 2177 50  0000 C CNN
+F 2 "" H 5050 2350 50  0000 C CNN
+F 3 "" H 5050 2350 50  0000 C CNN
+	1    5050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 57D42CB7
+P 3300 2500
+F 0 "#PWR?" H 3300 2250 50  0001 C CNN
+F 1 "GND" H 3305 2327 50  0000 C CNN
+F 2 "" H 3300 2500 50  0000 C CNN
+F 3 "" H 3300 2500 50  0000 C CNN
+	1    3300 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 57D42E3B
+P 2050 2200
+F 0 "#PWR?" H 2050 1950 50  0001 C CNN
+F 1 "GND" H 2055 2027 50  0000 C CNN
+F 2 "" H 2050 2200 50  0000 C CNN
+F 3 "" H 2050 2200 50  0000 C CNN
+	1    2050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 57D43B9E
+P 6150 1350
+F 0 "#PWR?" H 6150 1200 50  0001 C CNN
+F 1 "+3.3V" H 6165 1523 50  0000 C CNN
+F 2 "" H 6150 1350 50  0000 C CNN
+F 3 "" H 6150 1350 50  0000 C CNN
+	1    6150 1350
+	1    0    0    -1  
+$EndComp
+Text Notes 5450 1600 0    60   ~ 0
+3.3V 0.6A
+$Comp
+L Connector:Test_Point W?
+U 1 1 58646824
+P 2650 1500
+F 0 "W?" H 2650 1770 50  0000 C CNN
+F 1 "VINC" H 2650 1700 50  0000 C CNN
+F 2 "can-node:Measurement_Point_tiny" H 2850 1500 50  0001 C CNN
+F 3 "" H 2850 1500 50  0000 C CNN
+	1    2650 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VADC #PWR?
+U 1 1 57C23F9D
+P 7550 1850
+F 0 "#PWR?" H 7700 1800 50  0001 C CNN
+F 1 "+3.3VADC" H 7570 1993 50  0000 C CNN
+F 2 "" H 7550 1850 50  0000 C CNN
+F 3 "" H 7550 1850 50  0000 C CNN
+	1    7550 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L villa-control:+VIN #PWR?
+U 1 1 5870D4CB
+P 750 1250
+F 0 "#PWR?" H 750 1100 50  0001 C CNN
+F 1 "+VIN" H 765 1423 50  0000 C CNN
+F 2 "" H 750 1250 60  0000 C CNN
+F 3 "" H 750 1250 60  0000 C CNN
+	1    750  1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5637DBF8
+P 1200 2900
+F 0 "#PWR?" H 1200 2650 50  0001 C CNN
+F 1 "GND" H 1200 2750 50  0000 C CNN
+F 2 "" H 1200 2900 60  0000 C CNN
+F 3 "" H 1200 2900 60  0000 C CNN
+	1    1200 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 57AF3EE9
+P 850 2900
+F 0 "#PWR?" H 850 2650 50  0001 C CNN
+F 1 "GND" H 850 2750 50  0000 C CNN
+F 2 "" H 850 2900 60  0000 C CNN
+F 3 "" H 850 2900 60  0000 C CNN
+	1    850  2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2200 7550 2200
+Wire Wire Line
+	6950 1900 7550 1900
+Wire Wire Line
+	2050 1500 2050 1750
+Wire Wire Line
+	3300 2500 3300 2100
+Wire Wire Line
+	5050 2350 5050 2150
+Wire Wire Line
+	5050 1700 5050 1850
+Wire Wire Line
+	2050 2050 2050 2200
+Wire Wire Line
+	4200 2200 4200 2100
+Wire Wire Line
+	3850 1500 3800 1500
+Wire Wire Line
+	7550 1900 7550 1850
+Wire Wire Line
+	1400 1500 1600 1500
+Wire Wire Line
+	850  2900 850  2350
+Connection ~ 850  1500
+Wire Wire Line
+	850  2050 850  1500
+Wire Wire Line
+	750  1500 850  1500
+Connection ~ 1600 1500
+Connection ~ 1200 2050
+Wire Wire Line
+	1600 2050 1200 2050
+Wire Wire Line
+	1200 1800 1200 2050
+Wire Wire Line
+	1600 1900 1600 2050
+Wire Wire Line
+	1600 1600 1600 1500
+Wire Wire Line
+	1200 2900 1200 2600
+Wire Wire Line
+	750  1250 750  1500
+$Comp
+L power:GND #PWR?
+U 1 1 587684E1
+P 6150 2350
+F 0 "#PWR?" H 6150 2100 50  0001 C CNN
+F 1 "GND" H 6150 2200 50  0000 C CNN
+F 2 "" H 6150 2350 60  0000 C CNN
+F 3 "" H 6150 2350 60  0000 C CNN
+	1    6150 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2350 6150 2250
+Wire Wire Line
+	4200 1700 4200 1800
+Wire Wire Line
+	850  1500 1000 1500
+Wire Wire Line
+	1200 2050 1200 2300
+Wire Wire Line
+	2800 1700 2650 1700
+$Comp
+L Regulator_Switching:LMR16006YQ3 U?
+U 1 1 57D41661
+P 3300 1700
+F 0 "U?" H 3300 2287 60  0000 C CNN
+F 1 "LMR16006" H 3300 2181 60  0000 C CNN
+F 2 "can-node:TI-DDC_HandSoldering" H 3300 1600 60  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmr16006y-q1.pdf" H 3300 1600 60  0001 C CNN
+F 4 "595-MR16006YQ3DDCRQ1" H 3400 2387 50  0001 C CNN "DPN"
+F 5 "Mouser" H 3600 2587 50  0001 C CNN "Distributor"
+F 6 "LMR16006YQ3DDCRQ1" H 3300 1700 50  0001 C CNN "MPN"
+F 7 "Texas Instruments" H 3300 1700 50  0001 C CNN "Manufacturer"
+	1    3300 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1700 2350 1500
+Wire Wire Line
+	2350 1500 2650 1500
+Connection ~ 2650 1500
+Wire Wire Line
+	2650 1500 2800 1500
+Wire Wire Line
+	1600 1500 2050 1500
+Wire Wire Line
+	2350 1500 2050 1500
+Connection ~ 2350 1500
+Connection ~ 2050 1500
+Wire Wire Line
+	3800 1700 4200 1700
+Connection ~ 4200 1700
+Wire Wire Line
+	4200 1700 4350 1700
+Wire Wire Line
+	4150 1500 4200 1500
+Wire Wire Line
+	4200 1500 4200 1700
+Wire Wire Line
+	3800 1900 3800 2550
+Wire Wire Line
+	3800 2550 4750 2550
+Wire Wire Line
+	4750 2550 4750 1700
+Wire Wire Line
+	4750 1700 4650 1700
+Wire Wire Line
+	5050 1700 4750 1700
+Connection ~ 5050 1700
+Connection ~ 4750 1700
+$Comp
+L Connector:Test_Point W?
+U 1 1 58761A7C
+P 6150 2250
+F 0 "W?" H 6208 2370 50  0000 L CNN
+F 1 "GND" H 6208 2279 50  0000 L CNN
+F 2 "can-node:TH-Pad_1.5mm" H 6350 2250 50  0001 C CNN
+F 3 "" H 6350 2250 50  0000 C CNN
+	1    6150 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Test_Point W?
+U 1 1 5876366A
+P 6150 1700
+F 0 "W?" H 6208 1820 50  0000 L CNN
+F 1 "3.3V" H 6150 1900 50  0000 L CNN
+F 2 "can-node:TH-Pad_1.5mm" H 6350 1700 50  0001 C CNN
+F 3 "" H 6350 1700 50  0000 C CNN
+	1    6150 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5050 1700 6150 1700
+Wire Wire Line
+	6150 1700 6150 1350
+Connection ~ 6150 1700
+$Comp
+L Device:CP C?
+U 1 1 5C096FBA
+P 3200 4850
+F 0 "C?" H 3318 4896 50  0000 L CNN
+F 1 "0.1F" H 3318 4805 50  0000 L CNN
+F 2 "" H 3238 4700 50  0001 C CNN
+F 3 "~" H 3200 4850 50  0001 C CNN
+	1    3200 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C097114
+P 3200 4350
+F 0 "R?" H 3270 4396 50  0000 L CNN
+F 1 "100" H 3270 4305 50  0000 L CNN
+F 2 "" V 3130 4350 50  0001 C CNN
+F 3 "~" H 3200 4350 50  0001 C CNN
+	1    3200 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 5C0972BE
+P 3200 3900
+F 0 "D?" V 3246 3821 50  0000 R CNN
+F 1 "0.3V" V 3155 3821 50  0000 R CNN
+F 2 "" H 3200 3900 50  0001 C CNN
+F 3 "~" H 3200 3900 50  0001 C CNN
+	1    3200 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C09737A
+P 3200 3600
+F 0 "#PWR?" H 3200 3450 50  0001 C CNN
+F 1 "+3.3V" H 3215 3773 50  0000 C CNN
+F 2 "" H 3200 3600 50  0000 C CNN
+F 3 "" H 3200 3600 50  0000 C CNN
+	1    3200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5C097B07
+P 4050 3600
+F 0 "#PWR?" H 4050 3450 50  0001 C CNN
+F 1 "+BATT" H 4065 3773 50  0000 C CNN
+F 2 "" H 4050 3600 50  0001 C CNN
+F 3 "" H 4050 3600 50  0001 C CNN
+	1    4050 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3600 3200 3750
+Wire Wire Line
+	3200 4050 3200 4150
+Wire Wire Line
+	3200 4500 3200 4700
+Wire Wire Line
+	3200 5000 3200 5150
+Wire Wire Line
+	3200 4150 4050 4150
+Wire Wire Line
+	4050 4150 4050 3600
+Connection ~ 3200 4150
+Wire Wire Line
+	3200 4150 3200 4200
+$Comp
+L power:GND #PWR?
+U 1 1 5C09A4FA
+P 3200 5150
+F 0 "#PWR?" H 3200 4900 50  0001 C CNN
+F 1 "GND" H 3205 4977 50  0000 C CNN
+F 2 "" H 3200 5150 50  0000 C CNN
+F 3 "" H 3200 5150 50  0000 C CNN
+	1    3200 5150
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
