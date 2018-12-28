@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:hvac-sensor-module-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -105,7 +104,7 @@ U 1 1 57D41A9C
 P 4000 1500
 F 0 "C3" V 3748 1500 50  0000 C CNN
 F 1 "100n >10V" V 3839 1500 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4038 1350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4038 1350 50  0001 C CNN
 F 3 "" H 4000 1500 50  0000 C CNN
 F 4 ">10V" V 4000 1500 60  0001 C CNN "Rating"
 F 5 "RE:X7R-G0603 100N" V 4000 1500 50  0001 C CNN "DPN"
@@ -145,7 +144,7 @@ U 1 1 57D41E1E
 P 5050 2000
 F 0 "C4" H 5165 2046 50  0000 L CNN
 F 1 "22µF" H 5165 1955 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 5088 1850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5088 1850 50  0001 C CNN
 F 3 "" H 5050 2000 50  0000 C CNN
 F 4 "Reichelt" H 5050 2000 50  0001 C CNN "Distributor"
 F 5 "X7R-G1206 22/10" H 5050 2000 50  0001 C CNN "DPN"
@@ -170,7 +169,7 @@ U 1 1 57D42289
 P 2050 1900
 F 0 "C1" H 2165 1946 50  0000 L CNN
 F 1 "2.2µF" H 2165 1855 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1210_HandSoldering" H 2088 1750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 2088 1750 50  0001 C CNN
 F 3 "" H 2050 1900 50  0000 C CNN
 F 4 "RE:KEM X7R1210 2,2U" H 2050 1900 50  0001 C CNN "Part"
 	1    2050 1900
@@ -234,15 +233,15 @@ $EndComp
 Text Notes 5450 1600 0    60   ~ 0
 3.3V 0.6A
 $Comp
-L Connector:TestPoint W1
+L Connector:Test_Point W1
 U 1 1 58646824
 P 2650 1500
 AR Path="/58646824" Ref="W1"  Part="1" 
 AR Path="/5BF46C7B/58646824" Ref="W1"  Part="1" 
-AR Path="/5C25DDE8/58646824" Ref="W1"  Part="1" 
-F 0 "W1" H 2650 1770 50  0000 C CNN
+AR Path="/5C25DDE8/58646824" Ref="TP18"  Part="1" 
+F 0 "TP18" H 2650 1770 50  0000 C CNN
 F 1 "VINC" H 2650 1700 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 2850 1500 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2850 1500 50  0001 C CNN
 F 3 "" H 2850 1500 50  0000 C CNN
 	1    2650 1500
 	1    0    0    -1  
@@ -400,29 +399,29 @@ Wire Wire Line
 Connection ~ 5050 1700
 Connection ~ 4750 1700
 $Comp
-L Connector:TestPoint W3
+L Connector:Test_Point W3
 U 1 1 58761A7C
 P 6150 2250
 AR Path="/58761A7C" Ref="W3"  Part="1" 
 AR Path="/5BF46C7B/58761A7C" Ref="W3"  Part="1" 
-AR Path="/5C25DDE8/58761A7C" Ref="W3"  Part="1" 
-F 0 "W3" H 6208 2370 50  0000 L CNN
+AR Path="/5C25DDE8/58761A7C" Ref="TP20"  Part="1" 
+F 0 "TP20" H 6208 2370 50  0000 L CNN
 F 1 "GND" H 6208 2279 50  0000 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 6350 2250 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm" H 6350 2250 50  0001 C CNN
 F 3 "" H 6350 2250 50  0000 C CNN
 	1    6150 2250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint W2
+L Connector:Test_Point W2
 U 1 1 5876366A
 P 6150 1700
 AR Path="/5876366A" Ref="W2"  Part="1" 
 AR Path="/5BF46C7B/5876366A" Ref="W2"  Part="1" 
-AR Path="/5C25DDE8/5876366A" Ref="W2"  Part="1" 
-F 0 "W2" H 6208 1820 50  0000 L CNN
+AR Path="/5C25DDE8/5876366A" Ref="TP19"  Part="1" 
+F 0 "TP19" H 6208 1820 50  0000 L CNN
 F 1 "3.3V" H 6150 1900 50  0000 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 6350 1700 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 6350 1700 50  0001 C CNN
 F 3 "" H 6350 1700 50  0000 C CNN
 	1    6150 1700
 	-1   0    0    1   

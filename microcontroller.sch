@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:hvac-sensor-module-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -31,7 +30,7 @@ U 1 1 562B6351
 P 3850 3350
 F 0 "C12" V 3950 3500 50  0000 C CNN
 F 1 "15p" V 3950 3200 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3850 3350 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3850 3350 60  0001 C CNN
 F 3 "" H 3850 3350 60  0000 C CNN
 	1    3850 3350
 	1    0    0    -1  
@@ -42,7 +41,7 @@ U 1 1 562B6358
 P 3150 3350
 F 0 "C10" V 3250 3500 50  0000 C CNN
 F 1 "15p" V 3250 3200 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3150 3350 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3150 3350 60  0001 C CNN
 F 3 "" H 3150 3350 60  0000 C CNN
 	1    3150 3350
 	1    0    0    -1  
@@ -97,7 +96,7 @@ U 1 1 562B638A
 P 3900 1300
 F 0 "C13" V 4000 1450 50  0000 C CNN
 F 1 "100n" V 4000 1150 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3900 1300 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3900 1300 60  0001 C CNN
 F 3 "" H 3900 1300 60  0000 C CNN
 	1    3900 1300
 	1    0    0    -1  
@@ -108,7 +107,7 @@ U 1 1 562B6391
 P 3550 1300
 F 0 "C11" V 3650 1450 50  0000 C CNN
 F 1 "100n" V 3650 1150 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3550 1300 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3550 1300 60  0001 C CNN
 F 3 "" H 3550 1300 60  0000 C CNN
 	1    3550 1300
 	1    0    0    -1  
@@ -119,7 +118,7 @@ U 1 1 562B6398
 P 2700 1300
 F 0 "C7" V 2800 1450 50  0000 C CNN
 F 1 "4µ7" V 2800 1150 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2700 1300 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2700 1300 60  0001 C CNN
 F 3 "" H 2700 1300 60  0000 C CNN
 	1    2700 1300
 	1    0    0    -1  
@@ -147,7 +146,7 @@ F 3 "" H 2200 2650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Sensor_Humidity:HDC1080 U2
+L villa-control:HDC1080 U2
 U 1 1 57AF6711
 P 1800 4250
 F 0 "U2" H 1800 4597 60  0000 C CNN
@@ -247,7 +246,7 @@ F 1 "32.768KHz 12.5pF" H 3500 3200 50  0000 C CNN
 F 2 "villa-control:Crystal-MS1V-T1K" H 3500 3050 50  0001 C CNN
 F 3 "" H 3500 3050 50  0000 C CNN
 	1    3500 3050
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Text Label 6600 4050 2    60   ~ 0
 UART1_TX
@@ -300,7 +299,7 @@ Wire Wire Line
 Wire Wire Line
 	5850 7250 5850 7100
 $Comp
-L Connector:TestPoint W7
+L Connector:Test_Point W7
 U 1 1 584476D2
 P 7050 5250
 AR Path="/584476D2" Ref="W7"  Part="1" 
@@ -308,13 +307,13 @@ AR Path="/5BF46F47/584476D2" Ref="TP14"  Part="1"
 AR Path="/5C25DF0F/584476D2" Ref="TP14"  Part="1" 
 F 0 "TP14" H 7050 5520 50  0000 C CNN
 F 1 "CAN_TX" H 7050 5450 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 7250 5250 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7250 5250 50  0001 C CNN
 F 3 "" H 7250 5250 50  0000 C CNN
 	1    7050 5250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint W8
+L Connector:Test_Point W8
 U 1 1 5844774F
 P 7050 5800
 AR Path="/5844774F" Ref="W8"  Part="1" 
@@ -322,7 +321,7 @@ AR Path="/5BF46F47/5844774F" Ref="TP15"  Part="1"
 AR Path="/5C25DF0F/5844774F" Ref="TP15"  Part="1" 
 F 0 "TP15" H 7050 6070 50  0000 C CNN
 F 1 "CAN_RX" H 7050 6000 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 7250 5800 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7250 5800 50  0001 C CNN
 F 3 "" H 7250 5800 50  0000 C CNN
 	1    7050 5800
 	1    0    0    -1  
@@ -330,15 +329,15 @@ $EndComp
 Wire Wire Line
 	7050 5250 7050 5350
 $Comp
-L Connector:TestPoint W4
+L Connector:Test_Point W4
 U 1 1 58448441
 P 3950 2250
 AR Path="/58448441" Ref="W4"  Part="1" 
 AR Path="/5BF46F47/58448441" Ref="W4"  Part="1" 
-AR Path="/5C25DF0F/58448441" Ref="W4"  Part="1" 
-F 0 "W4" H 3950 2520 50  0000 C CNN
+AR Path="/5C25DF0F/58448441" Ref="TP21"  Part="1" 
+F 0 "TP21" H 3950 2520 50  0000 C CNN
 F 1 "BOOT0" H 3950 2450 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 4150 2250 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4150 2250 50  0001 C CNN
 F 3 "" H 4150 2250 50  0000 C CNN
 	1    3950 2250
 	0    -1   -1   0   
@@ -416,7 +415,7 @@ U 1 1 586A5D1B
 P 10250 5700
 F 0 "C21" H 10365 5746 50  0000 L CNN
 F 1 "4n7" H 10365 5655 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 10288 5550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10288 5550 50  0001 C CNN
 F 3 "" H 10250 5700 50  0000 C CNN
 	1    10250 5700
 	1    0    0    -1  
@@ -445,7 +444,7 @@ U 1 1 586A5D2F
 P 8150 5900
 F 0 "C19" H 8265 5946 50  0000 L CNN
 F 1 "100n" H 8265 5855 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8188 5750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8188 5750 50  0001 C CNN
 F 3 "" H 8150 5900 50  0000 C CNN
 	1    8150 5900
 	1    0    0    -1  
@@ -502,7 +501,7 @@ Wire Wire Line
 Wire Wire Line
 	8150 5550 8150 5750
 $Comp
-L Connector:TestPoint W5
+L Connector:Test_Point W5
 U 1 1 5AEADEAA
 P 6650 4050
 AR Path="/5AEADEAA" Ref="W5"  Part="1" 
@@ -510,13 +509,13 @@ AR Path="/5BF46F47/5AEADEAA" Ref="TP7"  Part="1"
 AR Path="/5C25DF0F/5AEADEAA" Ref="TP7"  Part="1" 
 F 0 "TP7" H 6650 4320 50  0000 C CNN
 F 1 "UART_TX" H 6650 4250 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 6850 4050 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6850 4050 50  0001 C CNN
 F 3 "" H 6850 4050 50  0000 C CNN
 	1    6650 4050
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint W6
+L Connector:Test_Point W6
 U 1 1 5AEADEB0
 P 7050 4050
 AR Path="/5AEADEB0" Ref="W6"  Part="1" 
@@ -524,7 +523,7 @@ AR Path="/5BF46F47/5AEADEB0" Ref="TP8"  Part="1"
 AR Path="/5C25DF0F/5AEADEB0" Ref="TP8"  Part="1" 
 F 0 "TP8" H 7050 4320 50  0000 C CNN
 F 1 "UART_RX" H 7050 4250 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 7250 4050 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7250 4050 50  0001 C CNN
 F 3 "" H 7250 4050 50  0000 C CNN
 	1    7050 4050
 	1    0    0    -1  
@@ -572,7 +571,7 @@ U 1 1 5C09B9B5
 P 5700 1500
 F 0 "C14" V 5800 1650 50  0000 C CNN
 F 1 "100n" V 5800 1350 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5700 1500 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5700 1500 60  0001 C CNN
 F 3 "" H 5700 1500 60  0000 C CNN
 	1    5700 1500
 	1    0    0    -1  
@@ -598,7 +597,7 @@ U 1 1 5C0A5798
 P 6000 1500
 F 0 "C15" V 6100 1650 50  0000 C CNN
 F 1 "4µ7" V 6100 1350 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6000 1500 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6000 1500 60  0001 C CNN
 F 3 "" H 6000 1500 60  0000 C CNN
 	1    6000 1500
 	1    0    0    -1  
@@ -645,7 +644,7 @@ U 1 1 5C0EE67D
 P 6600 1150
 F 0 "C16" V 6700 1300 50  0000 C CNN
 F 1 "10n" V 6700 1000 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6600 1150 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6600 1150 60  0001 C CNN
 F 3 "" H 6600 1150 60  0000 C CNN
 	1    6600 1150
 	1    0    0    -1  
@@ -671,7 +670,7 @@ U 1 1 5C0EE68B
 P 6900 1150
 F 0 "C17" V 7000 1300 50  0000 C CNN
 F 1 "1µ" V 7000 1000 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6900 1150 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6900 1150 60  0001 C CNN
 F 3 "" H 6900 1150 60  0000 C CNN
 	1    6900 1150
 	1    0    0    -1  
@@ -718,7 +717,7 @@ U 1 1 5C1261C9
 P 4950 3350
 F 0 "U3" H 5350 1900 50  0000 C CNN
 F 1 "STM32F072C8Tx" H 4950 3350 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4350 1950 50  0001 R CNN
+F 2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" H 4350 1950 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00090510.pdf" H 4950 3350 50  0001 C CNN
 	1    4950 3350
 	1    0    0    -1  
@@ -743,8 +742,6 @@ Wire Wire Line
 	3850 3050 3850 3200
 Wire Wire Line
 	3850 3050 3850 2950
-Wire Wire Line
-	3850 2950 4250 2950
 Connection ~ 3850 3050
 $Comp
 L Device:C C8
@@ -752,7 +749,7 @@ U 1 1 5C25E827
 P 2750 2550
 F 0 "C8" V 2850 2700 50  0000 C CNN
 F 1 "100n" V 2850 2400 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2750 2550 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2750 2550 60  0001 C CNN
 F 3 "" H 2750 2550 60  0000 C CNN
 	1    2750 2550
 	1    0    0    -1  
@@ -854,7 +851,7 @@ U 1 1 5C38F4F5
 P 1150 4250
 F 0 "C5" V 1250 4400 50  0000 C CNN
 F 1 "100n" V 1250 4100 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1150 4250 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1150 4250 60  0001 C CNN
 F 3 "" H 1150 4250 60  0000 C CNN
 	1    1150 4250
 	1    0    0    -1  
@@ -997,7 +994,7 @@ U 1 1 5C4F452C
 P 3150 5650
 F 0 "C9" V 3250 5800 50  0000 C CNN
 F 1 "100n" V 3250 5500 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3150 5650 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3150 5650 60  0001 C CNN
 F 3 "" H 3150 5650 60  0000 C CNN
 	1    3150 5650
 	1    0    0    -1  
@@ -1060,7 +1057,7 @@ U 1 1 5C50CCC2
 P 2250 5650
 F 0 "C6" V 2350 5800 50  0000 C CNN
 F 1 "100n" V 2350 5500 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2250 5650 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2250 5650 60  0001 C CNN
 F 3 "" H 2250 5650 60  0000 C CNN
 	1    2250 5650
 	1    0    0    -1  
@@ -1165,8 +1162,6 @@ Wire Wire Line
 	7050 4150 7050 4050
 Wire Wire Line
 	5550 4150 7050 4150
-Wire Wire Line
-	5550 4250 7500 4250
 $Comp
 L Power_Protection:NUP2105L D7
 U 1 1 5C73A6A2
@@ -1176,7 +1171,7 @@ AR Path="/5BF46F47/5C73A6A2" Ref="D7"  Part="1"
 AR Path="/5C25DF0F/5C73A6A2" Ref="D7"  Part="1" 
 F 0 "D7" H 9905 5896 50  0000 L CNN
 F 1 "NUP2105L" H 9200 5700 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9925 5800 50  0001 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 9925 5800 50  0001 L CNN
 F 3 "http://www.onsemi.com/pub_link/Collateral/NUP2105L-D.PDF" H 9825 5975 50  0001 C CNN
 	1    9700 5850
 	1    0    0    -1  
@@ -1205,7 +1200,7 @@ $EndComp
 Wire Wire Line
 	9700 6150 9700 6050
 $Comp
-L Connector:TestPoint TP4
+L Connector:Test_Point TP4
 U 1 1 5C7861D9
 P 6350 3550
 AR Path="/5C7861D9" Ref="TP4"  Part="1" 
@@ -1213,13 +1208,13 @@ AR Path="/5BF46F47/5C7861D9" Ref="TP4"  Part="1"
 AR Path="/5C25DF0F/5C7861D9" Ref="TP4"  Part="1" 
 F 0 "TP4" V 6304 3737 50  0000 L CNN
 F 1 "PA4" V 6395 3737 50  0000 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 6550 3550 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6550 3550 50  0001 C CNN
 F 3 "~" H 6550 3550 50  0001 C CNN
 	1    6350 3550
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP3
+L Connector:Test_Point TP3
 U 1 1 5C7862B4
 P 6150 3650
 AR Path="/5C7862B4" Ref="TP3"  Part="1" 
@@ -1227,13 +1222,13 @@ AR Path="/5BF46F47/5C7862B4" Ref="TP3"  Part="1"
 AR Path="/5C25DF0F/5C7862B4" Ref="TP3"  Part="1" 
 F 0 "TP3" V 6104 3837 50  0000 L CNN
 F 1 "PA5" V 6195 3837 50  0000 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 6350 3650 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6350 3650 50  0001 C CNN
 F 3 "~" H 6350 3650 50  0001 C CNN
 	1    6150 3650
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP2
+L Connector:Test_Point TP2
 U 1 1 5C78632A
 P 5950 3750
 AR Path="/5C78632A" Ref="TP2"  Part="1" 
@@ -1241,13 +1236,13 @@ AR Path="/5BF46F47/5C78632A" Ref="TP2"  Part="1"
 AR Path="/5C25DF0F/5C78632A" Ref="TP2"  Part="1" 
 F 0 "TP2" V 5904 3937 50  0000 L CNN
 F 1 "PA6" V 5995 3937 50  0000 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 6150 3750 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6150 3750 50  0001 C CNN
 F 3 "~" H 6150 3750 50  0001 C CNN
 	1    5950 3750
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP1
+L Connector:Test_Point TP1
 U 1 1 5C78639E
 P 5700 3850
 AR Path="/5C78639E" Ref="TP1"  Part="1" 
@@ -1255,7 +1250,7 @@ AR Path="/5BF46F47/5C78639E" Ref="TP1"  Part="1"
 AR Path="/5C25DF0F/5C78639E" Ref="TP1"  Part="1" 
 F 0 "TP1" V 5654 4037 50  0000 L CNN
 F 1 "PA7" V 5745 4037 50  0000 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 5900 3850 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5900 3850 50  0001 C CNN
 F 3 "~" H 5900 3850 50  0001 C CNN
 	1    5700 3850
 	0    1    1    0   
@@ -1271,7 +1266,7 @@ Wire Wire Line
 Wire Wire Line
 	5550 3150 9350 3150
 $Comp
-L Connector:TestPoint TP5
+L Connector:Test_Point TP5
 U 1 1 5C81BBFC
 P 6550 3450
 AR Path="/5C81BBFC" Ref="TP5"  Part="1" 
@@ -1279,13 +1274,13 @@ AR Path="/5BF46F47/5C81BBFC" Ref="TP5"  Part="1"
 AR Path="/5C25DF0F/5C81BBFC" Ref="TP5"  Part="1" 
 F 0 "TP5" V 6504 3637 50  0000 L CNN
 F 1 "USART2_RX" V 6595 3637 50  0000 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 6750 3450 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6750 3450 50  0001 C CNN
 F 3 "~" H 6750 3450 50  0001 C CNN
 	1    6550 3450
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP6
+L Connector:Test_Point TP6
 U 1 1 5C81BD02
 P 6700 3350
 AR Path="/5C81BD02" Ref="TP6"  Part="1" 
@@ -1293,7 +1288,7 @@ AR Path="/5BF46F47/5C81BD02" Ref="TP6"  Part="1"
 AR Path="/5C25DF0F/5C81BD02" Ref="TP6"  Part="1" 
 F 0 "TP6" V 6654 3537 50  0000 L CNN
 F 1 "USART2_TX" V 6745 3537 50  0000 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 6900 3350 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6900 3350 50  0001 C CNN
 F 3 "~" H 6900 3350 50  0001 C CNN
 	1    6700 3350
 	0    1    1    0   
@@ -1305,7 +1300,7 @@ Wire Wire Line
 Wire Wire Line
 	5550 4350 7500 4350
 $Comp
-L Connector:TestPoint W?
+L Connector:Test_Point W?
 U 1 1 5C287268
 P 7500 4250
 AR Path="/5C287268" Ref="W?"  Part="1" 
@@ -1313,13 +1308,13 @@ AR Path="/5BF46F47/5C287268" Ref="TP9"  Part="1"
 AR Path="/5C25DF0F/5C287268" Ref="TP9"  Part="1" 
 F 0 "TP9" H 7500 4520 50  0000 C CNN
 F 1 "USB_D-" H 7500 4450 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 7700 4250 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7700 4250 50  0001 C CNN
 F 3 "" H 7700 4250 50  0000 C CNN
 	1    7500 4250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint W?
+L Connector:Test_Point W?
 U 1 1 5C28741D
 P 7500 4350
 AR Path="/5C28741D" Ref="W?"  Part="1" 
@@ -1327,40 +1322,40 @@ AR Path="/5BF46F47/5C28741D" Ref="TP10"  Part="1"
 AR Path="/5C25DF0F/5C28741D" Ref="TP10"  Part="1" 
 F 0 "TP10" H 7500 4620 50  0000 C CNN
 F 1 "USB_D+" H 7500 4550 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 7700 4350 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7700 4350 50  0001 C CNN
 F 3 "" H 7700 4350 50  0000 C CNN
 	1    7500 4350
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:TestPoint TP13
+L Connector:Test_Point TP13
 U 1 1 5C299F40
 P 6550 4450
 F 0 "TP13" V 6504 4638 50  0000 L CNN
 F 1 "SWDIO" V 6595 4638 50  0000 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 6750 4450 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6750 4450 50  0001 C CNN
 F 3 "~" H 6750 4450 50  0001 C CNN
 	1    6550 4450
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP12
+L Connector:Test_Point TP12
 U 1 1 5C29A0A9
 P 6050 4550
 F 0 "TP12" V 6004 4738 50  0000 L CNN
 F 1 "SWCLK" V 6095 4738 50  0000 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 6250 4550 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6250 4550 50  0001 C CNN
 F 3 "~" H 6250 4550 50  0001 C CNN
 	1    6050 4550
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP11
+L Connector:Test_Point TP11
 U 1 1 5C2A213E
 P 1750 2050
 F 0 "TP11" V 1945 2124 50  0000 C CNN
 F 1 "NRST" V 1854 2124 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 1950 2050 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 1950 2050 50  0001 C CNN
 F 3 "~" H 1950 2050 50  0001 C CNN
 	1    1750 2050
 	0    -1   -1   0   
@@ -1368,23 +1363,23 @@ $EndComp
 Wire Wire Line
 	1750 2050 2200 2050
 $Comp
-L Connector:TestPoint TP16
+L Connector:Test_Point TP16
 U 1 1 5C2C27D7
 P 10600 4650
 F 0 "TP16" H 10658 4770 50  0000 L CNN
 F 1 "CANH_IN" H 10658 4679 50  0000 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 10800 4650 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 10800 4650 50  0001 C CNN
 F 3 "~" H 10800 4650 50  0001 C CNN
 	1    10600 4650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP17
+L Connector:Test_Point TP17
 U 1 1 5C2C2A49
 P 10600 6250
 F 0 "TP17" H 10542 6277 50  0000 R CNN
 F 1 "CANL_IN" H 10542 6368 50  0000 R CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 10800 6250 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 10800 6250 50  0001 C CNN
 F 3 "~" H 10800 6250 50  0001 C CNN
 	1    10600 6250
 	-1   0    0    1   
@@ -1394,14 +1389,18 @@ Wire Wire Line
 Wire Wire Line
 	10600 6250 10600 6150
 Wire Wire Line
-	4250 2850 3850 2850
-Wire Wire Line
-	3850 2850 3850 2750
-Wire Wire Line
 	3850 2750 3150 2750
 Wire Wire Line
 	3150 2750 3150 3050
 Connection ~ 3150 3050
 Wire Wire Line
 	9350 3150 9350 5350
+Wire Wire Line
+	5550 4250 7500 4250
+Wire Wire Line
+	3850 2850 3850 2750
+Wire Wire Line
+	3850 2950 4250 2950
+Wire Wire Line
+	4250 2850 3850 2850
 $EndSCHEMATC
