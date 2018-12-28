@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:hvac-sensor-module-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -27,45 +28,45 @@ $EndComp
 $Comp
 L Device:C C12
 U 1 1 562B6351
-P 3750 3350
-F 0 "C12" V 3850 3500 50  0000 C CNN
-F 1 "15p" V 3850 3200 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3750 3350 60  0001 C CNN
-F 3 "" H 3750 3350 60  0000 C CNN
-	1    3750 3350
+P 3850 3350
+F 0 "C12" V 3950 3500 50  0000 C CNN
+F 1 "15p" V 3950 3200 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3850 3350 60  0001 C CNN
+F 3 "" H 3850 3350 60  0000 C CNN
+	1    3850 3350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C10
 U 1 1 562B6358
-P 3250 3350
-F 0 "C10" V 3350 3500 50  0000 C CNN
-F 1 "15p" V 3350 3200 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3250 3350 60  0001 C CNN
-F 3 "" H 3250 3350 60  0000 C CNN
-	1    3250 3350
+P 3150 3350
+F 0 "C10" V 3250 3500 50  0000 C CNN
+F 1 "15p" V 3250 3200 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3150 3350 60  0001 C CNN
+F 3 "" H 3150 3350 60  0000 C CNN
+	1    3150 3350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR029
 U 1 1 562B635F
-P 3250 3600
-F 0 "#PWR029" H 3250 3350 50  0001 C CNN
-F 1 "GND" H 3250 3450 50  0000 C CNN
-F 2 "" H 3250 3600 60  0000 C CNN
-F 3 "" H 3250 3600 60  0000 C CNN
-	1    3250 3600
+P 3150 3600
+F 0 "#PWR029" H 3150 3350 50  0001 C CNN
+F 1 "GND" H 3150 3450 50  0000 C CNN
+F 2 "" H 3150 3600 60  0000 C CNN
+F 3 "" H 3150 3600 60  0000 C CNN
+	1    3150 3600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR032
 U 1 1 562B6365
-P 3750 3600
-F 0 "#PWR032" H 3750 3350 50  0001 C CNN
-F 1 "GND" H 3750 3450 50  0000 C CNN
-F 2 "" H 3750 3600 60  0000 C CNN
-F 3 "" H 3750 3600 60  0000 C CNN
-	1    3750 3600
+P 3850 3600
+F 0 "#PWR032" H 3850 3350 50  0001 C CNN
+F 1 "GND" H 3850 3450 50  0000 C CNN
+F 2 "" H 3850 3600 60  0000 C CNN
+F 3 "" H 3850 3600 60  0000 C CNN
+	1    3850 3600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -140,7 +141,7 @@ U 1 1 57ADEE8E
 P 2200 2650
 F 0 "SW2" V 2246 2596 50  0000 R CNN
 F 1 "SW_PUSH" V 2155 2596 50  0000 R CNN
-F 2 "can-node:KMR2" H 2200 2650 50  0001 C CNN
+F 2 "villa-control:KMR2_HandSolder" H 2200 2650 50  0001 C CNN
 F 3 "" H 2200 2650 50  0000 C CNN
 	1    2200 2650
 	0    -1   -1   0   
@@ -151,7 +152,7 @@ U 1 1 57AF6711
 P 1800 4250
 F 0 "U2" H 1800 4597 60  0000 C CNN
 F 1 "HDC1080" H 1950 4500 60  0000 C CNN
-F 2 "can-node:HDC1080_HandSoldering" H 1800 4250 60  0001 C CNN
+F 2 "villa-control:HDC1080_HandSoldering" H 1800 4250 60  0001 C CNN
 F 3 "" H 1800 4250 60  0000 C CNN
 	1    1800 4250
 	1    0    0    -1  
@@ -243,7 +244,7 @@ U 1 1 58147F50
 P 3500 3050
 F 0 "X1" H 3500 2900 50  0000 C CNN
 F 1 "32.768KHz 12.5pF" H 3500 3200 50  0000 C CNN
-F 2 "can-node:Crystal-MS1V-T1K" H 3500 3050 50  0001 C CNN
+F 2 "villa-control:Crystal-MS1V-T1K" H 3500 3050 50  0001 C CNN
 F 3 "" H 3500 3050 50  0000 C CNN
 	1    3500 3050
 	1    0    0    -1  
@@ -258,7 +259,7 @@ U 1 1 583060AE
 P 5550 6900
 F 0 "P1" H 5600 7150 50  0000 C CNN
 F 1 "Debug" H 5600 6600 50  0000 C CNN
-F 2 "can-node:micromatch_smd_2x05" H 5550 5700 50  0001 C CNN
+F 2 "villa-control:micromatch_smd_2x04" H 5550 5700 50  0001 C CNN
 F 3 "" H 5550 5700 50  0000 C CNN
 	1    5550 6900
 	1    0    0    -1  
@@ -275,9 +276,9 @@ F 3 "" H 5850 7250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3250 3500 3250 3600
+	3150 3500 3150 3600
 Wire Wire Line
-	3750 3500 3750 3600
+	3850 3500 3850 3600
 Wire Wire Line
 	2700 1600 2700 1450
 Connection ~ 4750 5000
@@ -299,23 +300,29 @@ Wire Wire Line
 Wire Wire Line
 	5850 7250 5850 7100
 $Comp
-L Connector:Test_Point W7
+L Connector:TestPoint W7
 U 1 1 584476D2
 P 7050 5250
-F 0 "W7" H 7050 5520 50  0000 C CNN
+AR Path="/584476D2" Ref="W7"  Part="1" 
+AR Path="/5BF46F47/584476D2" Ref="TP14"  Part="1" 
+AR Path="/5C25DF0F/584476D2" Ref="TP14"  Part="1" 
+F 0 "TP14" H 7050 5520 50  0000 C CNN
 F 1 "CAN_TX" H 7050 5450 50  0000 C CNN
-F 2 "can-node:Measurement_Point_tiny" H 7250 5250 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 7250 5250 50  0001 C CNN
 F 3 "" H 7250 5250 50  0000 C CNN
 	1    7050 5250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Test_Point W8
+L Connector:TestPoint W8
 U 1 1 5844774F
 P 7050 5800
-F 0 "W8" H 7050 6070 50  0000 C CNN
+AR Path="/5844774F" Ref="W8"  Part="1" 
+AR Path="/5BF46F47/5844774F" Ref="TP15"  Part="1" 
+AR Path="/5C25DF0F/5844774F" Ref="TP15"  Part="1" 
+F 0 "TP15" H 7050 6070 50  0000 C CNN
 F 1 "CAN_RX" H 7050 6000 50  0000 C CNN
-F 2 "can-node:Measurement_Point_tiny" H 7250 5800 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 7250 5800 50  0001 C CNN
 F 3 "" H 7250 5800 50  0000 C CNN
 	1    7050 5800
 	1    0    0    -1  
@@ -323,12 +330,15 @@ $EndComp
 Wire Wire Line
 	7050 5250 7050 5350
 $Comp
-L Connector:Test_Point W4
+L Connector:TestPoint W4
 U 1 1 58448441
 P 3950 2250
+AR Path="/58448441" Ref="W4"  Part="1" 
+AR Path="/5BF46F47/58448441" Ref="W4"  Part="1" 
+AR Path="/5C25DF0F/58448441" Ref="W4"  Part="1" 
 F 0 "W4" H 3950 2520 50  0000 C CNN
 F 1 "BOOT0" H 3950 2450 50  0000 C CNN
-F 2 "can-node:Measurement_Point_tiny" H 4150 2250 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 4150 2250 50  0001 C CNN
 F 3 "" H 4150 2250 50  0000 C CNN
 	1    3950 2250
 	0    -1   -1   0   
@@ -461,7 +471,7 @@ P 8850 5500
 F 0 "U5" H 8850 5937 60  0000 C CNN
 F 1 "TCAN334" H 8850 5831 60  0000 C CNN
 F 2 "villa-control:TI-DCN" H 8850 5500 60  0001 C CNN
-F 3 "http://www.ti.com/document-viewer/TCAN334/datasheet" H 8850 5500 60  0001 C CNN
+F 3 "" H 8850 5500 60  0000 C CNN
 	1    8850 5500
 	1    0    0    -1  
 $EndComp
@@ -476,7 +486,7 @@ SWCLK
 Text Label 6200 6900 2    60   ~ 0
 SWDIO
 Wire Wire Line
-	5550 4450 6050 4450
+	5550 4450 6550 4450
 Wire Wire Line
 	4750 5000 4850 5000
 Wire Wire Line
@@ -492,23 +502,29 @@ Wire Wire Line
 Wire Wire Line
 	8150 5550 8150 5750
 $Comp
-L Connector:Test_Point W5
+L Connector:TestPoint W5
 U 1 1 5AEADEAA
 P 6650 4050
-F 0 "W5" H 6650 4320 50  0000 C CNN
+AR Path="/5AEADEAA" Ref="W5"  Part="1" 
+AR Path="/5BF46F47/5AEADEAA" Ref="TP7"  Part="1" 
+AR Path="/5C25DF0F/5AEADEAA" Ref="TP7"  Part="1" 
+F 0 "TP7" H 6650 4320 50  0000 C CNN
 F 1 "UART_TX" H 6650 4250 50  0000 C CNN
-F 2 "can-node:Measurement_Point_tiny" H 6850 4050 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 6850 4050 50  0001 C CNN
 F 3 "" H 6850 4050 50  0000 C CNN
 	1    6650 4050
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Test_Point W6
+L Connector:TestPoint W6
 U 1 1 5AEADEB0
 P 7050 4050
-F 0 "W6" H 7050 4320 50  0000 C CNN
+AR Path="/5AEADEB0" Ref="W6"  Part="1" 
+AR Path="/5BF46F47/5AEADEB0" Ref="TP8"  Part="1" 
+AR Path="/5C25DF0F/5AEADEB0" Ref="TP8"  Part="1" 
+F 0 "TP8" H 7050 4320 50  0000 C CNN
 F 1 "UART_RX" H 7050 4250 50  0000 C CNN
-F 2 "can-node:Measurement_Point_tiny" H 7250 4050 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 7250 4050 50  0001 C CNN
 F 3 "" H 7250 4050 50  0000 C CNN
 	1    7050 4050
 	1    0    0    -1  
@@ -718,23 +734,18 @@ Wire Wire Line
 Wire Wire Line
 	2700 1000 2700 1150
 Wire Wire Line
-	3250 3200 3250 3050
+	3150 3200 3150 3050
 Wire Wire Line
-	3250 3050 3350 3050
+	3150 3050 3350 3050
 Wire Wire Line
-	3650 3050 3750 3050
+	3650 3050 3850 3050
 Wire Wire Line
-	3750 3050 3750 3200
+	3850 3050 3850 3200
 Wire Wire Line
-	3250 3050 3250 2850
+	3850 3050 3850 2950
 Wire Wire Line
-	3250 2850 4250 2850
-Connection ~ 3250 3050
-Wire Wire Line
-	3750 3050 3750 2950
-Wire Wire Line
-	3750 2950 4250 2950
-Connection ~ 3750 3050
+	3850 2950 4250 2950
+Connection ~ 3850 3050
 $Comp
 L Device:C C8
 U 1 1 5C25E827
@@ -794,8 +805,6 @@ F 3 "" H 5350 7250 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	5350 7250 5350 7100
-Wire Wire Line
-	2200 2050 1750 2050
 Text Label 1750 2050 0    50   ~ 0
 NRST
 Connection ~ 2200 2050
@@ -815,7 +824,7 @@ U 1 1 5C348429
 P 2200 2300
 F 0 "R5" H 2270 2346 50  0000 L CNN
 F 1 "220" H 2270 2255 50  0000 L CNN
-F 2 "" V 2130 2300 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2130 2300 50  0001 C CNN
 F 3 "~" H 2200 2300 50  0001 C CNN
 	1    2200 2300
 	1    0    0    -1  
@@ -872,7 +881,7 @@ U 1 1 5C3EF2DE
 P 2500 3900
 F 0 "R6" H 2570 3946 50  0000 L CNN
 F 1 "3.3k" H 2570 3855 50  0000 L CNN
-F 2 "" V 2430 3900 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2430 3900 50  0001 C CNN
 F 3 "~" H 2500 3900 50  0001 C CNN
 	1    2500 3900
 	1    0    0    -1  
@@ -905,7 +914,7 @@ U 1 1 5C3EF455
 P 2800 3900
 F 0 "R8" H 2870 3946 50  0000 L CNN
 F 1 "3.3k" H 2870 3855 50  0000 L CNN
-F 2 "" V 2730 3900 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2730 3900 50  0001 C CNN
 F 3 "~" H 2800 3900 50  0001 C CNN
 	1    2800 3900
 	1    0    0    -1  
@@ -977,7 +986,7 @@ U 1 1 5C4F4526
 P 2600 5750
 F 0 "SW3" V 2646 5696 50  0000 R CNN
 F 1 "SW_PUSH" V 2555 5696 50  0000 R CNN
-F 2 "can-node:KMR2" H 2600 5750 50  0001 C CNN
+F 2 "villa-control:KMR2_HandSolder" H 2600 5750 50  0001 C CNN
 F 3 "" H 2600 5750 50  0000 C CNN
 	1    2600 5750
 	0    -1   -1   0   
@@ -1025,7 +1034,7 @@ U 1 1 5C4F4541
 P 2600 5400
 F 0 "R7" H 2670 5446 50  0000 L CNN
 F 1 "3.3k" H 2670 5355 50  0000 L CNN
-F 2 "" V 2530 5400 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2530 5400 50  0001 C CNN
 F 3 "~" H 2600 5400 50  0001 C CNN
 	1    2600 5400
 	1    0    0    -1  
@@ -1040,7 +1049,7 @@ U 1 1 5C50CCBC
 P 1700 5750
 F 0 "SW1" V 1746 5696 50  0000 R CNN
 F 1 "SW_PUSH" V 1655 5696 50  0000 R CNN
-F 2 "can-node:KMR2" H 1700 5750 50  0001 C CNN
+F 2 "villa-control:KMR2_HandSolder" H 1700 5750 50  0001 C CNN
 F 3 "" H 1700 5750 50  0000 C CNN
 	1    1700 5750
 	0    -1   -1   0   
@@ -1088,7 +1097,7 @@ U 1 1 5C50CCD6
 P 1700 5400
 F 0 "R4" H 1770 5446 50  0000 L CNN
 F 1 "3.3k" H 1770 5355 50  0000 L CNN
-F 2 "" V 1630 5400 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1630 5400 50  0001 C CNN
 F 3 "~" H 1700 5400 50  0001 C CNN
 	1    1700 5400
 	1    0    0    -1  
@@ -1127,8 +1136,6 @@ Wire Wire Line
 Wire Wire Line
 	9450 3250 9450 5650
 Wire Wire Line
-	9350 3350 9350 5350
-Wire Wire Line
 	3450 5800 3450 4050
 Wire Wire Line
 	3450 4050 4250 4050
@@ -1154,198 +1161,19 @@ Wire Wire Line
 Connection ~ 7050 5350
 Wire Wire Line
 	7050 5350 8350 5350
-$Comp
-L Connector:USB_B_Micro J1
-U 1 1 5C59EB48
-P 8600 950
-F 0 "J1" V 8609 1279 50  0000 L CNN
-F 1 "USB_B_Micro" V 8700 1279 50  0000 L CNN
-F 2 "" H 8750 900 50  0001 C CNN
-F 3 "~" H 8750 900 50  0001 C CNN
-	1    8600 950 
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	7050 4150 7050 4050
 Wire Wire Line
 	5550 4150 7050 4150
 Wire Wire Line
-	5550 4250 8050 4250
-Wire Wire Line
-	7900 950  8200 950 
-$Comp
-L Power_Protection:USBLC6-2SC6 U4
-U 1 1 5C5D7B65
-P 8550 2450
-F 0 "U4" H 8550 3128 50  0000 C CNN
-F 1 "USBLC6-2SC6" H 8550 3037 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 7800 2850 50  0001 C CNN
-F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 8750 2800 50  0001 C CNN
-	1    8550 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8500 1250 8500 1650
-Wire Wire Line
-	8500 1650 8050 1650
-Wire Wire Line
-	8050 1650 8050 2350
-Wire Wire Line
-	8600 1250 8600 1650
-Wire Wire Line
-	8600 1650 9050 1650
-Wire Wire Line
-	9050 1650 9050 2350
-Wire Wire Line
-	8050 2550 8050 4250
-Wire Wire Line
-	9050 4350 9050 2550
-Wire Wire Line
-	5550 4350 9050 4350
-$Comp
-L power:GND #PWR050
-U 1 1 5C61B820
-P 8550 3050
-F 0 "#PWR050" H 8550 2800 50  0001 C CNN
-F 1 "GND" H 8550 2900 50  0000 C CNN
-F 2 "" H 8550 3050 60  0000 C CNN
-F 3 "" H 8550 3050 60  0000 C CNN
-	1    8550 3050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8550 3050 8550 3000
-Wire Wire Line
-	8550 3000 7900 3000
-Connection ~ 8550 3000
-Wire Wire Line
-	8550 3000 8550 2950
-Wire Wire Line
-	7900 950  7900 1550
-Wire Wire Line
-	8550 1950 8800 1950
-Wire Wire Line
-	8800 1950 8800 1750
-Wire Wire Line
-	8800 1750 9900 1750
-Connection ~ 8800 1750
-$Comp
-L Jumper:Jumper_2_Open JP1
-U 1 1 5C64D1D0
-P 10400 1750
-F 0 "JP1" H 10400 1985 50  0000 C CNN
-F 1 "Jumper_2_Open" H 10400 1894 50  0000 C CNN
-F 2 "" H 10400 1750 50  0001 C CNN
-F 3 "~" H 10400 1750 50  0001 C CNN
-	1    10400 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L villa-control:+VIN #PWR054
-U 1 1 5C64D56E
-P 10750 1500
-F 0 "#PWR054" H 10750 1350 50  0001 C CNN
-F 1 "+VIN" H 10765 1673 50  0000 C CNN
-F 2 "" H 10750 1500 50  0001 C CNN
-F 3 "" H 10750 1500 50  0001 C CNN
-	1    10750 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10600 1750 10750 1750
-Wire Wire Line
-	10750 1750 10750 1500
-$Comp
-L Device:C C20
-U 1 1 5C655F25
-P 9900 2000
-F 0 "C20" H 10015 2046 50  0000 L CNN
-F 1 "C" H 10015 1955 50  0000 L CNN
-F 2 "" H 9938 1850 50  0001 C CNN
-F 3 "~" H 9900 2000 50  0001 C CNN
-	1    9900 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR052
-U 1 1 5C655FE3
-P 9900 2250
-F 0 "#PWR052" H 9900 2000 50  0001 C CNN
-F 1 "GND" H 9900 2100 50  0000 C CNN
-F 2 "" H 9900 2250 60  0000 C CNN
-F 3 "" H 9900 2250 60  0000 C CNN
-	1    9900 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9900 1850 9900 1750
-Connection ~ 9900 1750
-Wire Wire Line
-	9900 1750 10200 1750
-Wire Wire Line
-	9900 2250 9900 2150
-$Comp
-L Device:R R11
-U 1 1 5C6684C4
-P 7450 1150
-F 0 "R11" H 7520 1196 50  0000 L CNN
-F 1 "3.3k" H 7520 1105 50  0000 L CNN
-F 2 "" V 7380 1150 50  0001 C CNN
-F 3 "~" H 7450 1150 50  0001 C CNN
-	1    7450 1150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8200 850  7700 850 
-Wire Wire Line
-	7450 850  7450 1000
-Wire Wire Line
-	7450 1300 7450 1550
-Wire Wire Line
-	7450 1550 7700 1550
-Connection ~ 7900 1550
-Wire Wire Line
-	8800 1250 8800 1300
-Wire Wire Line
-	7900 1550 7900 3000
-$Comp
-L Device:C C18
-U 1 1 5C6C2545
-P 7700 1150
-F 0 "C18" H 7815 1196 50  0000 L CNN
-F 1 "C" H 7815 1105 50  0000 L CNN
-F 2 "" H 7738 1000 50  0001 C CNN
-F 3 "~" H 7700 1150 50  0001 C CNN
-	1    7700 1150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7700 1000 7700 850 
-Connection ~ 7700 850 
-Wire Wire Line
-	7700 850  7450 850 
-Wire Wire Line
-	7700 1300 7700 1550
-Connection ~ 7700 1550
-Wire Wire Line
-	7700 1550 7900 1550
-$Comp
-L Device:Ferrite_Bead L2
-U 1 1 5C726DDE
-P 8800 1450
-F 0 "L2" H 8937 1496 50  0000 L CNN
-F 1 "Ferrite_Bead" H 8937 1405 50  0000 L CNN
-F 2 "" V 8730 1450 50  0001 C CNN
-F 3 "~" H 8800 1450 50  0001 C CNN
-	1    8800 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8800 1600 8800 1750
+	5550 4250 7500 4250
 $Comp
 L Power_Protection:NUP2105L D7
 U 1 1 5C73A6A2
 P 9700 5850
+AR Path="/5C73A6A2" Ref="D7"  Part="1" 
+AR Path="/5BF46F47/5C73A6A2" Ref="D7"  Part="1" 
+AR Path="/5C25DF0F/5C73A6A2" Ref="D7"  Part="1" 
 F 0 "D7" H 9905 5896 50  0000 L CNN
 F 1 "NUP2105L" H 9200 5700 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 9925 5800 50  0001 L CNN
@@ -1377,45 +1205,57 @@ $EndComp
 Wire Wire Line
 	9700 6150 9700 6050
 $Comp
-L Connector:Test_Point TP4
+L Connector:TestPoint TP4
 U 1 1 5C7861D9
 P 6350 3550
+AR Path="/5C7861D9" Ref="TP4"  Part="1" 
+AR Path="/5BF46F47/5C7861D9" Ref="TP4"  Part="1" 
+AR Path="/5C25DF0F/5C7861D9" Ref="TP4"  Part="1" 
 F 0 "TP4" V 6304 3737 50  0000 L CNN
 F 1 "PA4" V 6395 3737 50  0000 L CNN
-F 2 "" H 6550 3550 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 6550 3550 50  0001 C CNN
 F 3 "~" H 6550 3550 50  0001 C CNN
 	1    6350 3550
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP3
+L Connector:TestPoint TP3
 U 1 1 5C7862B4
 P 6150 3650
+AR Path="/5C7862B4" Ref="TP3"  Part="1" 
+AR Path="/5BF46F47/5C7862B4" Ref="TP3"  Part="1" 
+AR Path="/5C25DF0F/5C7862B4" Ref="TP3"  Part="1" 
 F 0 "TP3" V 6104 3837 50  0000 L CNN
 F 1 "PA5" V 6195 3837 50  0000 L CNN
-F 2 "" H 6350 3650 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 6350 3650 50  0001 C CNN
 F 3 "~" H 6350 3650 50  0001 C CNN
 	1    6150 3650
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP2
+L Connector:TestPoint TP2
 U 1 1 5C78632A
 P 5950 3750
+AR Path="/5C78632A" Ref="TP2"  Part="1" 
+AR Path="/5BF46F47/5C78632A" Ref="TP2"  Part="1" 
+AR Path="/5C25DF0F/5C78632A" Ref="TP2"  Part="1" 
 F 0 "TP2" V 5904 3937 50  0000 L CNN
 F 1 "PA6" V 5995 3937 50  0000 L CNN
-F 2 "" H 6150 3750 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 6150 3750 50  0001 C CNN
 F 3 "~" H 6150 3750 50  0001 C CNN
 	1    5950 3750
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP1
+L Connector:TestPoint TP1
 U 1 1 5C78639E
 P 5700 3850
+AR Path="/5C78639E" Ref="TP1"  Part="1" 
+AR Path="/5BF46F47/5C78639E" Ref="TP1"  Part="1" 
+AR Path="/5C25DF0F/5C78639E" Ref="TP1"  Part="1" 
 F 0 "TP1" V 5654 4037 50  0000 L CNN
 F 1 "PA7" V 5745 4037 50  0000 L CNN
-F 2 "" H 5900 3850 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 5900 3850 50  0001 C CNN
 F 3 "~" H 5900 3850 50  0001 C CNN
 	1    5700 3850
 	0    1    1    0   
@@ -1429,29 +1269,31 @@ Wire Wire Line
 Wire Wire Line
 	5550 3850 5700 3850
 Wire Wire Line
-	5550 3150 7200 3150
-Wire Wire Line
-	7200 3150 7200 3350
-Wire Wire Line
-	7200 3350 9350 3350
+	5550 3150 9350 3150
 $Comp
-L Connector:Test_Point TP5
+L Connector:TestPoint TP5
 U 1 1 5C81BBFC
 P 6550 3450
+AR Path="/5C81BBFC" Ref="TP5"  Part="1" 
+AR Path="/5BF46F47/5C81BBFC" Ref="TP5"  Part="1" 
+AR Path="/5C25DF0F/5C81BBFC" Ref="TP5"  Part="1" 
 F 0 "TP5" V 6504 3637 50  0000 L CNN
 F 1 "USART2_RX" V 6595 3637 50  0000 L CNN
-F 2 "" H 6750 3450 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 6750 3450 50  0001 C CNN
 F 3 "~" H 6750 3450 50  0001 C CNN
 	1    6550 3450
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Test_Point TP6
+L Connector:TestPoint TP6
 U 1 1 5C81BD02
 P 6700 3350
+AR Path="/5C81BD02" Ref="TP6"  Part="1" 
+AR Path="/5BF46F47/5C81BD02" Ref="TP6"  Part="1" 
+AR Path="/5C25DF0F/5C81BD02" Ref="TP6"  Part="1" 
 F 0 "TP6" V 6654 3537 50  0000 L CNN
 F 1 "USART2_TX" V 6745 3537 50  0000 L CNN
-F 2 "" H 6900 3350 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 6900 3350 50  0001 C CNN
 F 3 "~" H 6900 3350 50  0001 C CNN
 	1    6700 3350
 	0    1    1    0   
@@ -1460,4 +1302,106 @@ Wire Wire Line
 	6700 3350 5550 3350
 Wire Wire Line
 	6550 3450 5550 3450
+Wire Wire Line
+	5550 4350 7500 4350
+$Comp
+L Connector:TestPoint W?
+U 1 1 5C287268
+P 7500 4250
+AR Path="/5C287268" Ref="W?"  Part="1" 
+AR Path="/5BF46F47/5C287268" Ref="TP9"  Part="1" 
+AR Path="/5C25DF0F/5C287268" Ref="TP9"  Part="1" 
+F 0 "TP9" H 7500 4520 50  0000 C CNN
+F 1 "USB_D-" H 7500 4450 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 7700 4250 50  0001 C CNN
+F 3 "" H 7700 4250 50  0000 C CNN
+	1    7500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint W?
+U 1 1 5C28741D
+P 7500 4350
+AR Path="/5C28741D" Ref="W?"  Part="1" 
+AR Path="/5BF46F47/5C28741D" Ref="TP10"  Part="1" 
+AR Path="/5C25DF0F/5C28741D" Ref="TP10"  Part="1" 
+F 0 "TP10" H 7500 4620 50  0000 C CNN
+F 1 "USB_D+" H 7500 4550 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 7700 4350 50  0001 C CNN
+F 3 "" H 7700 4350 50  0000 C CNN
+	1    7500 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP13
+U 1 1 5C299F40
+P 6550 4450
+F 0 "TP13" V 6504 4638 50  0000 L CNN
+F 1 "SWDIO" V 6595 4638 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 6750 4450 50  0001 C CNN
+F 3 "~" H 6750 4450 50  0001 C CNN
+	1    6550 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP12
+U 1 1 5C29A0A9
+P 6050 4550
+F 0 "TP12" V 6004 4738 50  0000 L CNN
+F 1 "SWCLK" V 6095 4738 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 6250 4550 50  0001 C CNN
+F 3 "~" H 6250 4550 50  0001 C CNN
+	1    6050 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP11
+U 1 1 5C2A213E
+P 1750 2050
+F 0 "TP11" V 1945 2124 50  0000 C CNN
+F 1 "NRST" V 1854 2124 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 1950 2050 50  0001 C CNN
+F 3 "~" H 1950 2050 50  0001 C CNN
+	1    1750 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1750 2050 2200 2050
+$Comp
+L Connector:TestPoint TP16
+U 1 1 5C2C27D7
+P 10600 4650
+F 0 "TP16" H 10658 4770 50  0000 L CNN
+F 1 "CANH_IN" H 10658 4679 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 10800 4650 50  0001 C CNN
+F 3 "~" H 10800 4650 50  0001 C CNN
+	1    10600 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP17
+U 1 1 5C2C2A49
+P 10600 6250
+F 0 "TP17" H 10542 6277 50  0000 R CNN
+F 1 "CANL_IN" H 10542 6368 50  0000 R CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 10800 6250 50  0001 C CNN
+F 3 "~" H 10800 6250 50  0001 C CNN
+	1    10600 6250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10600 4800 10600 4650
+Wire Wire Line
+	10600 6250 10600 6150
+Wire Wire Line
+	4250 2850 3850 2850
+Wire Wire Line
+	3850 2850 3850 2750
+Wire Wire Line
+	3850 2750 3150 2750
+Wire Wire Line
+	3150 2750 3150 3050
+Connection ~ 3150 3050
+Wire Wire Line
+	9350 3150 9350 5350
 $EndSCHEMATC

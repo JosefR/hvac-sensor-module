@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:hvac-sensor-module-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text Notes 550  1000 0    60   ~ 0
-5..24 V
+5..36 V
 $Comp
 L Device:R R1
 U 1 1 5637DBF2
@@ -91,7 +92,7 @@ U 1 1 57C95065
 P 1200 1600
 F 0 "Q1" V 1500 1600 50  0000 C CNN
 F 1 "RSS060P05FRATB" V 1400 1600 50  0000 C CNN
-F 2 "can-node:DMP6023LSS" V 1150 1850 50  0001 C CIN
+F 2 "villa-control:SOIC-8_3.9x4.9mm_Pitch1.27mm_11123333" V 1150 1850 50  0001 C CIN
 F 3 "https://www.rohm.de/datasheet/RSS060P05FRA/rss060p05fra" H 1200 1600 50  0001 L CNN
 F 4 "RSS060P05FRATB" V 1600 1700 50  0001 C CNN "DPN"
 F 5 "Rohm" V 1200 1600 50  0001 C CNN "Manufacturer"
@@ -117,7 +118,7 @@ U 1 1 57D41C33
 P 4200 1950
 F 0 "D4" V 4154 2029 50  0000 L CNN
 F 1 "50V Vr 1A" V 4245 2029 50  0000 L CNN
-F 2 "can-node:D_SOD-123_HandSoldering" H 4200 1950 50  0001 C CNN
+F 2 "villa-control:D_SOD-123_HandSolder" H 4200 1950 50  0001 C CNN
 F 3 "" H 4200 1950 50  0000 C CNN
 F 4 "Reichelt" V 4200 1950 50  0001 C CNN "Distributor"
 F 5 "MBR 0540T1G ONS" V 4200 1950 50  0001 C CNN "DPN"
@@ -130,7 +131,7 @@ U 1 1 57D41D41
 P 4500 1700
 F 0 "L1" V 4716 1700 50  0000 C CNN
 F 1 "27µH 220mΩ" V 4625 1700 50  0000 C CNN
-F 2 "can-node:SDE0604A_HandSoldering" H 4500 1700 50  0001 C CNN
+F 2 "villa-control:SDE0604A_HandSoldering" H 4500 1700 50  0001 C CNN
 F 3 "" H 4500 1700 50  0000 C CNN
 F 4 "RE:L-PIS2812 27µ" V 4500 1700 50  0001 C CNN "Replacement Part"
 F 5 "SDE0604A-270M" V 4916 1900 50  0001 C CNN "DPN"
@@ -233,12 +234,15 @@ $EndComp
 Text Notes 5450 1600 0    60   ~ 0
 3.3V 0.6A
 $Comp
-L Connector:Test_Point W1
+L Connector:TestPoint W1
 U 1 1 58646824
 P 2650 1500
+AR Path="/58646824" Ref="W1"  Part="1" 
+AR Path="/5BF46C7B/58646824" Ref="W1"  Part="1" 
+AR Path="/5C25DDE8/58646824" Ref="W1"  Part="1" 
 F 0 "W1" H 2650 1770 50  0000 C CNN
 F 1 "VINC" H 2650 1700 50  0000 C CNN
-F 2 "can-node:Measurement_Point_tiny" H 2850 1500 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 2850 1500 50  0001 C CNN
 F 3 "" H 2850 1500 50  0000 C CNN
 	1    2650 1500
 	1    0    0    -1  
@@ -357,7 +361,7 @@ U 1 1 57D41661
 P 3300 1700
 F 0 "U1" H 3300 2287 60  0000 C CNN
 F 1 "LMR16006" H 3300 2181 60  0000 C CNN
-F 2 "can-node:TI-DDC_HandSoldering" H 3300 1600 60  0001 C CNN
+F 2 "villa-control:TI-DDC_HandSoldering" H 3300 1600 60  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lmr16006y-q1.pdf" H 3300 1600 60  0001 C CNN
 F 4 "595-MR16006YQ3DDCRQ1" H 3400 2387 50  0001 C CNN "DPN"
 F 5 "Mouser" H 3600 2587 50  0001 C CNN "Distributor"
@@ -368,11 +372,6 @@ F 7 "Texas Instruments" H 3300 1700 50  0001 C CNN "Manufacturer"
 $EndComp
 Wire Wire Line
 	2350 1700 2350 1500
-Wire Wire Line
-	2350 1500 2650 1500
-Connection ~ 2650 1500
-Wire Wire Line
-	2650 1500 2800 1500
 Wire Wire Line
 	1600 1500 2050 1500
 Wire Wire Line
@@ -401,23 +400,29 @@ Wire Wire Line
 Connection ~ 5050 1700
 Connection ~ 4750 1700
 $Comp
-L Connector:Test_Point W3
+L Connector:TestPoint W3
 U 1 1 58761A7C
 P 6150 2250
+AR Path="/58761A7C" Ref="W3"  Part="1" 
+AR Path="/5BF46C7B/58761A7C" Ref="W3"  Part="1" 
+AR Path="/5C25DDE8/58761A7C" Ref="W3"  Part="1" 
 F 0 "W3" H 6208 2370 50  0000 L CNN
 F 1 "GND" H 6208 2279 50  0000 L CNN
-F 2 "can-node:TH-Pad_1.5mm" H 6350 2250 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 6350 2250 50  0001 C CNN
 F 3 "" H 6350 2250 50  0000 C CNN
 	1    6150 2250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Test_Point W2
+L Connector:TestPoint W2
 U 1 1 5876366A
 P 6150 1700
+AR Path="/5876366A" Ref="W2"  Part="1" 
+AR Path="/5BF46C7B/5876366A" Ref="W2"  Part="1" 
+AR Path="/5C25DDE8/5876366A" Ref="W2"  Part="1" 
 F 0 "W2" H 6208 1820 50  0000 L CNN
 F 1 "3.3V" H 6150 1900 50  0000 L CNN
-F 2 "can-node:TH-Pad_1.5mm" H 6350 1700 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 6350 1700 50  0001 C CNN
 F 3 "" H 6350 1700 50  0000 C CNN
 	1    6150 1700
 	-1   0    0    1   
@@ -426,14 +431,13 @@ Wire Wire Line
 	5050 1700 6150 1700
 Wire Wire Line
 	6150 1700 6150 1350
-Connection ~ 6150 1700
 $Comp
 L Device:CP C2
 U 1 1 5C096FBA
 P 3200 4850
 F 0 "C2" H 3318 4896 50  0000 L CNN
 F 1 "0.1F" H 3318 4805 50  0000 L CNN
-F 2 "" H 3238 4700 50  0001 C CNN
+F 2 "villa-control:CP_Radial_D13.0mm_P10mm" H 3238 4700 50  0001 C CNN
 F 3 "~" H 3200 4850 50  0001 C CNN
 	1    3200 4850
 	1    0    0    -1  
@@ -444,7 +448,7 @@ U 1 1 5C097114
 P 3200 4350
 F 0 "R3" H 3270 4396 50  0000 L CNN
 F 1 "100" H 3270 4305 50  0000 L CNN
-F 2 "" V 3130 4350 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3130 4350 50  0001 C CNN
 F 3 "~" H 3200 4350 50  0001 C CNN
 	1    3200 4350
 	1    0    0    -1  
@@ -455,8 +459,10 @@ U 1 1 5C0972BE
 P 3200 3900
 F 0 "D3" V 3246 3821 50  0000 R CNN
 F 1 "0.3V" V 3155 3821 50  0000 R CNN
-F 2 "" H 3200 3900 50  0001 C CNN
+F 2 "villa-control:D_SOD-123_HandSolder" H 3200 3900 50  0001 C CNN
 F 3 "~" H 3200 3900 50  0001 C CNN
+F 4 "MBR0520LT1G" V 3200 3900 50  0001 C CNN "MPN"
+F 5 "ON Semiconductor" V 3200 3900 50  0001 C CNN "Manufacturer"
 	1    3200 3900
 	0    -1   -1   0   
 $EndComp
@@ -508,4 +514,6 @@ F 3 "" H 3200 5150 50  0000 C CNN
 	1    3200 5150
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2350 1500 2800 1500
 $EndSCHEMATC
