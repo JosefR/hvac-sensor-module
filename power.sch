@@ -1,12 +1,13 @@
 EESchema Schematic File Version 4
+LIBS:hvac-sensor-module-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
-Title "CAN Node"
-Date "2018-05-01"
-Rev "1.1"
+Title "VillaControl - HVAC Sensor Module"
+Date "2019-01-02"
+Rev "1.0"
 Comp "Josef Raschen"
 Comment1 ""
 Comment2 ""
@@ -235,15 +236,15 @@ Text Notes 5450 1600 0    60   ~ 0
 $Comp
 L Connector:Test_Point W1
 U 1 1 58646824
-P 2650 1500
+P 2500 1400
 AR Path="/58646824" Ref="W1"  Part="1" 
 AR Path="/5BF46C7B/58646824" Ref="W1"  Part="1" 
 AR Path="/5C25DDE8/58646824" Ref="TP18"  Part="1" 
-F 0 "TP18" H 2650 1770 50  0000 C CNN
-F 1 "VINC" H 2650 1700 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2850 1500 50  0001 C CNN
-F 3 "" H 2850 1500 50  0000 C CNN
-	1    2650 1500
+F 0 "TP18" H 2500 1670 50  0000 C CNN
+F 1 "VINC" H 2500 1600 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2700 1400 50  0001 C CNN
+F 3 "" H 2700 1400 50  0000 C CNN
+	1    2500 1400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -430,89 +431,13 @@ Wire Wire Line
 	5050 1700 6150 1700
 Wire Wire Line
 	6150 1700 6150 1350
-$Comp
-L Device:CP C2
-U 1 1 5C096FBA
-P 3200 4850
-F 0 "C2" H 3318 4896 50  0000 L CNN
-F 1 "0.1F" H 3318 4805 50  0000 L CNN
-F 2 "villa-control:CP_Radial_D13.0mm_P10mm" H 3238 4700 50  0001 C CNN
-F 3 "~" H 3200 4850 50  0001 C CNN
-	1    3200 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 5C097114
-P 3200 4350
-F 0 "R3" H 3270 4396 50  0000 L CNN
-F 1 "100" H 3270 4305 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 3130 4350 50  0001 C CNN
-F 3 "~" H 3200 4350 50  0001 C CNN
-	1    3200 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Schottky D3
-U 1 1 5C0972BE
-P 3200 3900
-F 0 "D3" V 3246 3821 50  0000 R CNN
-F 1 "0.3V" V 3155 3821 50  0000 R CNN
-F 2 "villa-control:D_SOD-123_HandSolder" H 3200 3900 50  0001 C CNN
-F 3 "~" H 3200 3900 50  0001 C CNN
-F 4 "MBR0520LT1G" V 3200 3900 50  0001 C CNN "MPN"
-F 5 "ON Semiconductor" V 3200 3900 50  0001 C CNN "Manufacturer"
-	1    3200 3900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR05
-U 1 1 5C09737A
-P 3200 3600
-F 0 "#PWR05" H 3200 3450 50  0001 C CNN
-F 1 "+3.3V" H 3215 3773 50  0000 C CNN
-F 2 "" H 3200 3600 50  0000 C CNN
-F 3 "" H 3200 3600 50  0000 C CNN
-	1    3200 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+BATT #PWR08
-U 1 1 5C097B07
-P 4050 3600
-F 0 "#PWR08" H 4050 3450 50  0001 C CNN
-F 1 "+BATT" H 4065 3773 50  0000 C CNN
-F 2 "" H 4050 3600 50  0001 C CNN
-F 3 "" H 4050 3600 50  0001 C CNN
-	1    4050 3600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3200 3600 3200 3750
+	2350 1500 2500 1500
 Wire Wire Line
-	3200 4050 3200 4150
+	2500 1400 2500 1500
+Connection ~ 2500 1500
 Wire Wire Line
-	3200 4500 3200 4700
-Wire Wire Line
-	3200 5000 3200 5150
-Wire Wire Line
-	3200 4150 4050 4150
-Wire Wire Line
-	4050 4150 4050 3600
-Connection ~ 3200 4150
-Wire Wire Line
-	3200 4150 3200 4200
-$Comp
-L power:GND #PWR06
-U 1 1 5C09A4FA
-P 3200 5150
-F 0 "#PWR06" H 3200 4900 50  0001 C CNN
-F 1 "GND" H 3205 4977 50  0000 C CNN
-F 2 "" H 3200 5150 50  0000 C CNN
-F 3 "" H 3200 5150 50  0000 C CNN
-	1    3200 5150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2350 1500 2800 1500
+	2500 1500 2800 1500
+Text Label 1750 1500 0    50   ~ 0
+VIN_DCDC
 $EndSCHEMATC
