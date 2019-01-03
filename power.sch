@@ -46,10 +46,11 @@ U 1 1 57AF3BB5
 P 850 2200
 F 0 "D1" V 804 2288 50  0000 L CNN
 F 1 "40.2V" V 895 2288 50  0000 L CNN
-F 2 "Diodes_SMD:D_SMA_Handsoldering" H 850 2200 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88367/p4sma.pdf" H 850 2200 50  0001 C CNN
-F 4 "P4SMA47CA" V 1100 2200 60  0000 C CNN "Part"
-F 5 "RE P6SMB 40CA SMD" V 850 2200 50  0001 C CNN "Replacement Part"
+F 2 "Diode_SMD:D_SMB_Handsoldering" H 850 2200 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/A400/SMBJ_LITTELFUSE_DATASHEET.pdf" H 850 2200 50  0001 C CNN
+F 4 "Littelfuse" V 850 2200 50  0001 C CNN "Manufacturer"
+F 5 "SMBJ40CA" V 850 2200 50  0001 C CNN "MPN"
+F 6 "Re" V 850 2200 50  0001 C CNN "Distributor"
 	1    850  2200
 	0    1    1    0   
 $EndComp
