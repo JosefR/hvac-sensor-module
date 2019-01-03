@@ -101,10 +101,10 @@ F 5 "Rohm" V 1200 1600 50  0001 C CNN "Manufacturer"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C3
+L Device:C C2
 U 1 1 57D41A9C
 P 4000 1500
-F 0 "C3" V 3748 1500 50  0000 C CNN
+F 0 "C2" V 3748 1500 50  0000 C CNN
 F 1 "100n >10V" V 3839 1500 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4038 1350 50  0001 C CNN
 F 3 "" H 4000 1500 50  0000 C CNN
@@ -114,10 +114,10 @@ F 5 "RE:X7R-G0603 100N" V 4000 1500 50  0001 C CNN "DPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:D_Schottky D4
+L Device:D_Schottky D3
 U 1 1 57D41C33
 P 4200 1950
-F 0 "D4" V 4154 2029 50  0000 L CNN
+F 0 "D3" V 4154 2029 50  0000 L CNN
 F 1 "50V Vr 1A" V 4245 2029 50  0000 L CNN
 F 2 "villa-control:D_SOD-123_HandSolder" H 4200 1950 50  0001 C CNN
 F 3 "" H 4200 1950 50  0000 C CNN
@@ -141,10 +141,10 @@ F 6 "Bourns" V 5116 2100 50  0001 C CNN "Distributor"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C4
+L Device:C C3
 U 1 1 57D41E1E
 P 5050 2000
-F 0 "C4" H 5165 2046 50  0000 L CNN
+F 0 "C3" H 5165 2046 50  0000 L CNN
 F 1 "22µF" H 5165 1955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5088 1850 50  0001 C CNN
 F 3 "" H 5050 2000 50  0000 C CNN
