@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "VillaControl - HVAC Sensor Module"
-Date "2019-01-02"
+Date "2019-01-04"
 Rev "1.0"
 Comp "Josef Raschen"
 Comment1 ""

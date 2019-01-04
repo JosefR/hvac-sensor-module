@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
 Title "VillaControl - HVAC Sensor Module"
-Date "2019-01-02"
+Date "2019-01-04"
 Rev "1.0"
 Comp "Josef Raschen"
 Comment1 ""
@@ -22,7 +22,7 @@ U 1 1 5637DBF2
 P 1200 2450
 F 0 "R1" V 1280 2450 50  0000 C CNN
 F 1 "100k" V 1200 2450 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 1130 2450 30  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1130 2450 30  0001 C CNN
 F 3 "" H 1200 2450 30  0000 C CNN
 	1    1200 2450
 	1    0    0    -1  
@@ -33,10 +33,11 @@ U 1 1 5637E04D
 P 1600 1750
 F 0 "D2" H 1600 1850 50  0000 C CNN
 F 1 "10V" H 1600 1650 50  0000 C CNN
-F 2 "Diodes_SMD:D_SMA_Handsoldering" H 1600 1750 60  0001 C CNN
-F 3 "http://www.onsemi.com/pub_link/Collateral/MM3Z2V4T1-D.PDF" H 1600 1750 60  0001 C CNN
-F 4 "ON Semiconductor 1SMA5925BT3G" H 1600 1750 60  0001 C CNN "Device"
-F 5 "RE:BZX 384-C12 NXP" H 1600 1750 50  0001 C CNN "Replacement Part"
+F 2 "villa-control:D_SOT-23_ANK_Handsolder" H 1600 1750 60  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/BZX84C2V4LT1-D.PDF" H 1600 1750 60  0001 C CNN
+F 4 "100mW" H 1600 1750 50  0001 C CNN "Requirements"
+F 5 "ON Semiconductor" H 1600 1750 50  0001 C CNN "Manufacturer"
+F 6 "BZX84C10LT1G" H 1600 1750 50  0001 C CNN "MPN"
 	1    1600 1750
 	0    1    1    0   
 $EndComp
@@ -88,15 +89,15 @@ F 3 "" H 6950 1900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_PMOS_SGD Q1
+L Device:Q_PMOS_GSD Q1
 U 1 1 57C95065
 P 1200 1600
 F 0 "Q1" V 1500 1600 50  0000 C CNN
-F 1 "RSS060P05FRATB" V 1400 1600 50  0000 C CNN
-F 2 "villa-control:SOIC-8_3.9x4.9mm_Pitch1.27mm_11123333" V 1150 1850 50  0001 C CIN
+F 1 "FDN5618P" V 1400 1600 50  0000 C CNN
+F 2 "villa-control:SuperSOT-3_HandSoldering" V 1150 1850 50  0001 C CIN
 F 3 "https://www.rohm.de/datasheet/RSS060P05FRA/rss060p05fra" H 1200 1600 50  0001 L CNN
-F 4 "RSS060P05FRATB" V 1600 1700 50  0001 C CNN "DPN"
-F 5 "Rohm" V 1200 1600 50  0001 C CNN "Manufacturer"
+F 4 "FDN5618P" V 1600 1700 50  0001 C CNN "DPN"
+F 5 "Fairchild" V 1200 1600 50  0001 C CNN "Manufacturer"
 	1    1200 1600
 	0    -1   -1   0   
 $EndComp
@@ -119,10 +120,13 @@ U 1 1 57D41C33
 P 4200 1950
 F 0 "D3" V 4154 2029 50  0000 L CNN
 F 1 "50V Vr 1A" V 4245 2029 50  0000 L CNN
-F 2 "villa-control:D_SOD-123_HandSolder" H 4200 1950 50  0001 C CNN
-F 3 "" H 4200 1950 50  0000 C CNN
+F 2 "villa-control:D_SOD-123_Handsolder" H 4200 1950 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/MBR0540T1-D.PDF" H 4200 1950 50  0001 C CNN
 F 4 "Reichelt" V 4200 1950 50  0001 C CNN "Distributor"
 F 5 "MBR 0540T1G ONS" V 4200 1950 50  0001 C CNN "DPN"
+F 6 "VR 50V, 1A" V 4200 1950 50  0001 C CNN "Requirements"
+F 7 "ON Semiconductor" V 4200 1950 50  0001 C CNN "Manufacturer"
+F 8 "MBR0540T1G" V 4200 1950 50  0001 C CNN "MPN"
 	1    4200 1950
 	0    1    1    0   
 $EndComp
@@ -135,7 +139,7 @@ F 1 "27µH 220mΩ" V 4625 1700 50  0000 C CNN
 F 2 "villa-control:SDE0604A_HandSoldering" H 4500 1700 50  0001 C CNN
 F 3 "" H 4500 1700 50  0000 C CNN
 F 4 "RE:L-PIS2812 27µ" V 4500 1700 50  0001 C CNN "Replacement Part"
-F 5 "SDE0604A-270M" V 4916 1900 50  0001 C CNN "DPN"
+F 5 "SDE0604A-270M" V 4916 1900 50  0001 C CNN "MPN"
 F 6 "Bourns" V 5116 2100 50  0001 C CNN "Distributor"
 	1    4500 1700
 	0    -1   -1   0   
@@ -159,7 +163,7 @@ U 1 1 57D4210A
 P 2500 1700
 F 0 "R2" H 2570 1746 50  0000 L CNN
 F 1 "100k" H 2570 1655 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 2430 1700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2430 1700 50  0001 C CNN
 F 3 "" H 2500 1700 50  0000 C CNN
 F 4 "RE:SMD-0603 100K" H 2500 1700 50  0001 C CNN "Part"
 	1    2500 1700
