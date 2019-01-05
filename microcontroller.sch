@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
 Title "VillaControl - HVAC Sensor Module"
-Date "2019-01-04"
+Date "2019-01-05"
 Rev "1.0"
 Comp "Josef Raschen"
 Comment1 ""
@@ -110,6 +110,8 @@ F 0 "U2" H 1500 4597 60  0000 C CNN
 F 1 "HDC1080" H 1650 4500 60  0000 C CNN
 F 2 "villa-control:HDC1080_HandSoldering" H 1500 4250 60  0001 C CNN
 F 3 "" H 1500 4250 60  0000 C CNN
+F 4 "Texas Instruments" H 1500 4250 50  0001 C CNN "Manufacturer"
+F 5 "HDC1080DMBR" H 1500 4250 50  0001 C CNN "MPN"
 	1    1500 4250
 	1    0    0    -1  
 $EndComp
@@ -359,6 +361,9 @@ F 0 "C13" H 10365 5746 50  0000 L CNN
 F 1 "4n7" H 10365 5655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10288 5550 50  0001 C CNN
 F 3 "" H 10250 5700 50  0000 C CNN
+F 4 "50V" H 10250 5700 50  0001 C CNN "Requirements"
+F 5 "Kemet" H 10250 5700 50  0001 C CNN "Manufacturer"
+F 6 "C0603C472K5RAC7013" H 10250 5700 50  0001 C CNN "MPN"
 	1    10250 5700
 	1    0    0    -1  
 $EndComp
@@ -413,6 +418,8 @@ F 0 "U5" H 8850 5937 60  0000 C CNN
 F 1 "TCAN334" H 8850 5831 60  0000 C CNN
 F 2 "villa-control:TI-DCN" H 8850 5500 60  0001 C CNN
 F 3 "" H 8850 5500 60  0000 C CNN
+F 4 "Texas Instruments" H 8850 5500 50  0001 C CNN "Manufacturer"
+F 5 "TCAN334DCNR" H 8850 5500 50  0001 C CNN "MPN"
 	1    8850 5500
 	1    0    0    -1  
 $EndComp
@@ -536,7 +543,7 @@ L Device:C C4
 U 1 1 5C0EE67D
 P 6600 1150
 F 0 "C4" V 6700 1300 50  0000 C CNN
-F 1 "10n" V 6700 1000 50  0000 C CNN
+F 1 "100n" V 6700 1000 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6600 1150 60  0001 C CNN
 F 3 "" H 6600 1150 60  0000 C CNN
 	1    6600 1150
@@ -562,7 +569,7 @@ L Device:C C17
 U 1 1 5C0EE68B
 P 6900 1150
 F 0 "C17" V 7000 1300 50  0000 C CNN
-F 1 "1µ" V 7000 1000 50  0000 C CNN
+F 1 "4µ7" V 7000 1000 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6900 1150 60  0001 C CNN
 F 3 "" H 6900 1150 60  0000 C CNN
 	1    6900 1150
@@ -1043,6 +1050,8 @@ F 0 "D4" H 9905 5896 50  0000 L CNN
 F 1 "NUP2105L" H 9200 5700 50  0000 L CNN
 F 2 "villa-control:SOT-23_Handsoldering" H 9925 5800 50  0001 L CNN
 F 3 "http://www.onsemi.com/pub_link/Collateral/NUP2105L-D.PDF" H 9825 5975 50  0001 C CNN
+F 4 "ON Semiconductor" H 9700 5850 50  0001 C CNN "Manufacturer"
+F 5 "NUP2105LT1G" H 9700 5850 50  0001 C CNN "MPN"
 	1    9700 5850
 	1    0    0    -1  
 $EndComp

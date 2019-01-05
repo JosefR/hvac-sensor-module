@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
 Title "VillaControl - HVAC Sensor Module"
-Date "2019-01-04"
+Date "2019-01-05"
 Rev "1.0"
 Comp "Josef Raschen"
 Comment1 ""
@@ -22,7 +22,7 @@ U 1 1 5637DBF2
 P 1200 2450
 F 0 "R1" V 1280 2450 50  0000 C CNN
 F 1 "100k" V 1200 2450 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1130 2450 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1130 2450 30  0001 C CNN
 F 3 "" H 1200 2450 30  0000 C CNN
 	1    1200 2450
 	1    0    0    -1  
@@ -106,11 +106,10 @@ L Device:C C2
 U 1 1 57D41A9C
 P 4000 1500
 F 0 "C2" V 3748 1500 50  0000 C CNN
-F 1 "100n >10V" V 3839 1500 50  0000 C CNN
+F 1 "100n" V 3839 1500 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4038 1350 50  0001 C CNN
 F 3 "" H 4000 1500 50  0000 C CNN
 F 4 ">10V" V 4000 1500 60  0001 C CNN "Rating"
-F 5 "RE:X7R-G0603 100N" V 4000 1500 50  0001 C CNN "DPN"
 	1    4000 1500
 	0    1    1    0   
 $EndComp
@@ -119,14 +118,12 @@ L Device:D_Schottky D3
 U 1 1 57D41C33
 P 4200 1950
 F 0 "D3" V 4154 2029 50  0000 L CNN
-F 1 "50V Vr 1A" V 4245 2029 50  0000 L CNN
+F 1 "50V Vrrm 1A" V 4245 2029 50  0000 L CNN
 F 2 "villa-control:D_SOD-123_Handsolder" H 4200 1950 50  0001 C CNN
-F 3 "https://www.onsemi.com/pub/Collateral/MBR0540T1-D.PDF" H 4200 1950 50  0001 C CNN
-F 4 "Reichelt" V 4200 1950 50  0001 C CNN "Distributor"
-F 5 "MBR 0540T1G ONS" V 4200 1950 50  0001 C CNN "DPN"
-F 6 "VR 50V, 1A" V 4200 1950 50  0001 C CNN "Requirements"
-F 7 "ON Semiconductor" V 4200 1950 50  0001 C CNN "Manufacturer"
-F 8 "MBR0540T1G" V 4200 1950 50  0001 C CNN "MPN"
+F 3 "https://www.rohm.com/products/diodes/schottky-barrier-diodes/automotive/rbr1lam60atf-product" H 4200 1950 50  0001 C CNN
+F 4 "Vrrm 50V, 1A" V 4200 1950 50  0001 C CNN "Requirements"
+F 5 "ROHM" V 4200 1950 50  0001 C CNN "ON Semiconductor"
+F 6 "NRVTS260ESFT1G" V 4200 1950 50  0001 C CNN "MPN"
 	1    4200 1950
 	0    1    1    0   
 $EndComp
@@ -136,11 +133,10 @@ U 1 1 57D41D41
 P 4500 1700
 F 0 "L1" V 4716 1700 50  0000 C CNN
 F 1 "27µH 220mΩ" V 4625 1700 50  0000 C CNN
-F 2 "villa-control:SDE0604A_HandSoldering" H 4500 1700 50  0001 C CNN
-F 3 "" H 4500 1700 50  0000 C CNN
-F 4 "RE:L-PIS2812 27µ" V 4500 1700 50  0001 C CNN "Replacement Part"
-F 5 "SDE0604A-270M" V 4916 1900 50  0001 C CNN "MPN"
-F 6 "Bourns" V 5116 2100 50  0001 C CNN "Distributor"
+F 2 "villa-control:L_Bourns-SDR0604" H 4500 1700 50  0001 C CNN
+F 3 "https://www.bourns.com/data/global/pdfs/SDR0604.pdf" H 4500 1700 50  0001 C CNN
+F 4 "SDR0604-270YL" V 4916 1900 50  0001 C CNN "MPN"
+F 5 "Bourns" V 5116 2100 50  0001 C CNN "Distributor"
 	1    4500 1700
 	0    -1   -1   0   
 $EndComp
@@ -154,6 +150,8 @@ F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5088 1850 50  
 F 3 "" H 5050 2000 50  0000 C CNN
 F 4 "Reichelt" H 5050 2000 50  0001 C CNN "Distributor"
 F 5 "X7R-G1206 22/10" H 5050 2000 50  0001 C CNN "DPN"
+F 6 "Murata" H 5050 2000 50  0001 C CNN "Manufacturer"
+F 7 "GRM31CR71A226KE15L" H 5050 2000 50  0001 C CNN "MPN"
 	1    5050 2000
 	1    0    0    -1  
 $EndComp
@@ -177,7 +175,9 @@ F 0 "C1" H 2165 1946 50  0000 L CNN
 F 1 "2.2µF" H 2165 1855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 2088 1750 50  0001 C CNN
 F 3 "" H 2050 1900 50  0000 C CNN
-F 4 "RE:KEM X7R1210 2,2U" H 2050 1900 50  0001 C CNN "Part"
+F 4 "50V" H 2050 1900 50  0001 C CNN "Requirements"
+F 5 "KEMET" H 2050 1900 50  0001 C CNN "Manufacturer"
+F 6 "C1210C225K5RACTU" H 2050 1900 50  0001 C CNN "MPN"
 	1    2050 1900
 	1    0    0    -1  
 $EndComp
@@ -368,10 +368,8 @@ F 0 "U1" H 3300 2287 60  0000 C CNN
 F 1 "LMR16006" H 3300 2181 60  0000 C CNN
 F 2 "villa-control:TI-DDC_HandSoldering" H 3300 1600 60  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lmr16006y-q1.pdf" H 3300 1600 60  0001 C CNN
-F 4 "595-MR16006YQ3DDCRQ1" H 3400 2387 50  0001 C CNN "DPN"
-F 5 "Mouser" H 3600 2587 50  0001 C CNN "Distributor"
-F 6 "LMR16006YQ3DDCRQ1" H 3300 1700 50  0001 C CNN "MPN"
-F 7 "Texas Instruments" H 3300 1700 50  0001 C CNN "Manufacturer"
+F 4 "LMR16006YQ3DDCRQ1" H 3300 1700 50  0001 C CNN "MPN"
+F 5 "Texas Instruments" H 3300 1700 50  0001 C CNN "Manufacturer"
 	1    3300 1700
 	1    0    0    -1  
 $EndComp
